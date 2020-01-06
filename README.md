@@ -23,6 +23,16 @@ if __name__ == '__main__':
         logging.error(err)
 ```
 
+Installation
+--
+pypi homepage : https://pypi.org/project/usb-barcode-scanner/
+github : https://github.com/julzhk/usb_barcode_scanner
+
+install with:
+```
+pip install usb-barcode-scanner
+```
+
 Compatibility
 --
 
@@ -36,5 +46,6 @@ Please see the MIT license attached.
 Support & Contribution
 --
 Questions? Drop me a line : usb_barcode_scanner_support.20.learningfuture@spamgourmet.com
+
 Suggestions and improvements welcome.
 
