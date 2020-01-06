@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: usb-barcode-scanner
+Version: 0.1
+Summary: Handheld USB Scanner package
+Home-page: https://github.com/julzhk/usb_barcode_scanner
+Author: Julian Harley
+Author-email: usb_barcode_scanner_support.20.learningfuture@spamgourmet.com
+License: UNKNOWN
+Description: # usb_barcode_scanner
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown

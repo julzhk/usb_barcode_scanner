@@ -1,0 +1,7 @@
+README.md
+scanner.py
+setup.py
+usb_barcode_scanner.egg-info/PKG-INFO
+usb_barcode_scanner.egg-info/SOURCES.txt
+usb_barcode_scanner.egg-info/dependency_links.txt
+usb_barcode_scanner.egg-info/top_level.txt
