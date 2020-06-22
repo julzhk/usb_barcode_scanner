@@ -29,6 +29,7 @@ def barcode_reader():
                 if char_code == CR_CHAR:
                     # all barcodes end with a carriage return
                     return barcode_string_output
+                    print('NRIC Number :', barcode_string_output)
                 if char_code == SHIFT_CHAR:
                     # use uppercase character set next time
                     CHARMAP = CHARMAP_UPPERCASE
