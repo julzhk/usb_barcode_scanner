@@ -2,7 +2,7 @@
 
 # Inspired by https://www.piddlerintheroot.com/barcode-scanner/
 # https://www.raspberrypi.org/forums/viewtopic.php?f=45&t=55100
-# from 'brechmos'
+# from 'brechmos' - thank-you!
 
 CHARMAP_LOWERCASE = {4: 'a', 5: 'b', 6: 'c', 7: 'd', 8: 'e', 9: 'f', 10: 'g', 11: 'h', 12: 'i', 13: 'j', 14: 'k',
                      15: 'l', 16: 'm', 17: 'n', 18: 'o', 19: 'p', 20: 'q', 21: 'r', 22: 's', 23: 't', 24: 'u', 25: 'v',
@@ -16,6 +16,8 @@ CHARMAP_UPPERCASE = {4: 'A', 5: 'B', 6: 'C', 7: 'D', 8: 'E', 9: 'F', 10: 'G', 11
                      53: '~', 54: '<', 55: '>', 56: '?'}
 CR_CHAR = 40
 SHIFT_CHAR = 2
+ERROR_CHARACTER = '?'
+
 
 def barcode_reader():
     barcode_string_output = ''
@@ -33,7 +35,7 @@ def barcode_reader():
                     # use uppercase character set next time
                     CHARMAP = CHARMAP_UPPERCASE
                 else:
-                    # if the charcode isn't recognized, add ?
-                    barcode_string_output += CHARMAP.get(char_code, '?')
+                    # if the charcode isn't recognized, use ?
+                    barcode_string_output += CHARMAP.get(char_code, ERROR_CHARACTER)
                     # reset to lowercase character map
                     CHARMAP = CHARMAP_LOWERCASE

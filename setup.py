@@ -5,7 +5,7 @@ setuptools.setup(
      name='usb barcode scanner',
      version='0.1',
      scripts=['scanner.py'] ,
-     author="Julian Harley",
+     author="Julz",
      author_email="usb_barcode_scanner_support.20.learningfuture@spamgourmet.com",
      description="Handheld USB Scanner package",
      long_description=long_description,
