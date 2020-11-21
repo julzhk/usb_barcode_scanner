@@ -25,12 +25,12 @@ if __name__ == '__main__':
 
 Installation
 --
-pypi homepage : https://pypi.org/project/usb-barcode-scanner/
+pypi homepage : https://pypi.org/project/usb-barcode-scanner-julz/0.2/
 github : https://github.com/julzhk/usb_barcode_scanner
 
 install with:
 ```
-pip install usb-barcode-scanner
+pip install usb-barcode-scanner-julz
 ```
 
 Compatibility
