@@ -1,6 +1,6 @@
 import logging
 
-from usb_scanner.scanner import barcode_reader
+from scanner import barcode_reader
 
 # simple usage  - in python 3
 if __name__ == '__main__':
