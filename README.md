@@ -23,6 +23,12 @@ if __name__ == '__main__':
         logging.error(err)
 ```
 
+The project is really quite simple so if there's any difficulty with installing via pip, just copy the 
+scanner.py into the root of your project and import from there: 
+```
+from scanner import barcode_reader
+```
+
 Installation
 --
 pypi homepage : https://pypi.org/project/usb-barcode-scanner-julz/0.2/
@@ -32,6 +38,10 @@ install with:
 ```
 pip install usb-barcode-scanner-julz
 ```
+
+Useful 
+--
+Generate barcodes : https://graphicore.github.io/librebarcode/
 
 Compatibility
 --
@@ -45,7 +55,8 @@ Please see the MIT license attached.
 
 Support & Contribution
 --
-Questions? Drop me a line : usb_barcode_scanner_support.20.learningfuture@spamgourmet.com
+Questions? Drop me a line : usb_barcode_scanner_support_2.20.learningfuture@spamgourmet.com
+ or add a support ticket here in github.
 
 Suggestions and improvements welcome.
 
