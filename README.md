@@ -11,7 +11,10 @@ Usage:
 The library is very simple to use: just import it and in case, wait for input.
 
 ```
+import logging
+
 from usb_scanner.scanner import barcode_reader
+
 if __name__ == '__main__':
     try:
         while True:
