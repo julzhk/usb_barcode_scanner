@@ -55,7 +55,7 @@ Please see the MIT license attached.
 
 Support & Contribution
 --
-Questions? Drop me a line : usb_barcode_scanner_support_2.20.learningfuture@spamgourmet.com
+Questions? Drop me a line : montane.gryphon_0m@icloud.com
  or add a support ticket here in github.
 
 Suggestions and improvements welcome.
