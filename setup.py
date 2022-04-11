@@ -4,8 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 setuptools.setup(
     name='usb_barcode_scanner_julz',
-    version='0.2',
-    scripts=['scanner.py'],
+    version='0.2.1',
     author="Julz",
     author_email="usb_barcode_scanner_support.20.learningfuture@spamgourmet.com",
     description="Handheld USB Scanner package",
