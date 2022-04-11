@@ -34,8 +34,9 @@ from scanner import barcode_reader
 
 Installation
 --
-pypi homepage : https://pypi.org/project/usb-barcode-scanner-julz/0.2/
-github : https://github.com/julzhk/usb_barcode_scanner
+PyPI homepage: https://pypi.org/project/usb-barcode-scanner-julz/
+
+GitHub: https://github.com/julzhk/usb_barcode_scanner
 
 install with:
 ```
