@@ -1,9 +1,0 @@
-README.md
-scanner.py
-setup.py
-sample_usage/__init__.py
-sample_usage/sample.py
-usb_barcode_scanner.egg-info/PKG-INFO
-usb_barcode_scanner.egg-info/SOURCES.txt
-usb_barcode_scanner.egg-info/dependency_links.txt
-usb_barcode_scanner.egg-info/top_level.txt
