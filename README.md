@@ -13,7 +13,7 @@ The library is very simple to use: just import it and in case, wait for input.
 ```
 import logging
 
-from usb_scanner.scanner import barcode_reader
+from usb_barcode_scanner.scanner import barcode_reader
 
 if __name__ == '__main__':
     try:
@@ -34,8 +34,9 @@ from scanner import barcode_reader
 
 Installation
 --
-pypi homepage : https://pypi.org/project/usb-barcode-scanner-julz/0.2/
-github : https://github.com/julzhk/usb_barcode_scanner
+PyPI homepage: https://pypi.org/project/usb-barcode-scanner-julz/
+
+GitHub: https://github.com/julzhk/usb_barcode_scanner
 
 install with:
 ```
