@@ -26,6 +26,35 @@ if __name__ == '__main__':
         logging.error(err)
 ```
 
+Alternatively, you also could open the input from the barcode scanner in an extra step:
+
+```
+from usb_barcode_scanner.scanner import BarcodeReader
+
+reader = BarcodeReader()
+
+# Prepare something like sending a command to transport something near the scanning interface
+
+upcnumber = reader.read_barcode()
+
+```
+
+Per default, the script opens a scanning device at `/dev/hidraw0`. If the device gets another address, 
+you can simply set that adddress as an argument:
+
+```
+from usb_barcode_scanner.scanner import barcode_reader
+
+upcnumber = barcode_reader("/dev/hidraw1")
+
+# or
+
+from usb_barcode_scanner.scanner import BarcodeReader
+
+reader = BarcodeReader("/dev/hidraw1")
+upcnumber = reader.read_barcode()
+```
+
 The project is really quite simple so if there's any difficulty with installing via pip, just copy the 
 scanner.py into the root of your project and import from there: 
 ```

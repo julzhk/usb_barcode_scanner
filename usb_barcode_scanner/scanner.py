@@ -19,17 +19,22 @@ SHIFT_CHAR = 2
 ERROR_CHARACTER = '?'
 
 
-def barcode_reader():
-    barcode_string_output = ''
-    # barcode can have a 'shift' character; this switches the character set
-    # from the lower to upper case variant for the next character only.
-    CHARMAP = CHARMAP_LOWERCASE
-    with open('/dev/hidraw0', 'rb') as fp:
+class BarcodeReader:
+    def __init__(self, device_path="/dev/hidraw0"):
+        self.device_path = device_path
+        self.f = open(self.device_path, "rb")
+
+    def read_barcode(self):
+        barcode_string_output = ''
+        # barcode can have a 'shift' character; this switches the character set
+        # from the lower to upper case variant for the next character only.
+        CHARMAP = CHARMAP_LOWERCASE
         while True:
             # step through returned character codes, ignore zeroes
-            for char_code in [element for element in fp.read(8) if element > 0]:
+            for char_code in [element for element in self.f.read(8) if element > 0]:
                 if char_code == CR_CHAR:
                     # all barcodes end with a carriage return
+                    self.f.close()
                     return barcode_string_output
                 if char_code == SHIFT_CHAR:
                     # use uppercase character set next time
@@ -39,3 +44,9 @@ def barcode_reader():
                     barcode_string_output += CHARMAP.get(char_code, ERROR_CHARACTER)
                     # reset to lowercase character map
                     CHARMAP = CHARMAP_LOWERCASE
+
+
+
+def barcode_reader(device_path="/dev/hidraw0"):
+    reader = BarcodeReader(device_path)
+    return reader.read_barcode()
