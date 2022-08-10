@@ -1,8 +1,10 @@
 # usb_barcode_scanner
 
-Support input from a hand-held USB scanner in python - such as this one: 
+Support input from a USB scanner in python - such as this one: 
 
 https://www.amazon.co.uk/gp/product/B0736NNZNV/
+
+These scanners are often 'hand-held' but it should work on any USB keyboard emulating scanner.
 
 
 Usage:
@@ -75,11 +77,15 @@ pip install usb-barcode-scanner-julz
 Useful 
 --
 Generate barcodes : https://graphicore.github.io/librebarcode/
+Alterative implementation (using evdev instead of the hidraw stream) : https://gist.github.com/michalfapso/1755e8a35bb83720c2559ce8ffde5f85
+
 
 Compatibility
 --
 
-Tested and working in Linux and Raspberry Pi, using Python 3.6, but should work with Python 2.7 too.
+Tested and working in Linux and Raspberry Pi using Python 3.6+.
+It won't work for windows.
+
 
 License
 --
@@ -89,7 +95,7 @@ Please see the MIT license attached.
 Support & Contribution
 --
 Questions? Drop me a line : montane.gryphon_0m@icloud.com
- or add a support ticket here in github.
-
-Suggestions and improvements welcome.
+ or add a support ticket here in github. 
+ 
+ Suggestions and improvements welcome. I'm sorry I'm not very active answering questions, but I'll get to them eventually
 
